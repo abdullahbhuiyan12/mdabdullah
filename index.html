@@ -1,124 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
+<html>
+<head>
+	<title> WEB PRAROZ</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
 
-      :root {
-        --primary-color: #fff;
-        --secondary-color: #333;
-        --main-color: #754ef9;
-      }
+</head>
+<body>
+	<header>
+		<div class="main">
+		<div> class="logo">
+			<img src="logo.png">
+		</div>
+		
+		 <ul>
+		 <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+		 <li><a href="#">About</a></li>
+		 <li><a href="#">Dessert</a></li>
+		 <li><a href="#">Appetizers</a></li>
+		 <li><a href="#">Pasta</a></li>
+		 <li><a href="#">Salad</a></li>
+		 <li><a href="#">Burger</a></li>
+		 <li><a href="#">Pizza</a></li>
+		 <li><a href="#"><i class="fa fa-caret-down"></i> More Recipes <i class="fa fa-caret-down"></i></a>
+		 	<div class="sub-menu">
+		 		<ul>	 
+		 		 <li><a href="#">Cookies</a></li>
+		 		 <li><a href="#">Sandwich</a></li>
+		 	 </ul>
+		 	</div>
+		 </li>
+		</ul>
 
-      .dark-mode {
-        --primary-color: #0b061f;
-        --secondary-color: #fff;
-      }
+		 </div>
+		 <div class="title">
+		 	<h1>HOMIE RECIPES</h1>
+		 </div>
+		 <div class="button">
+		 	<a href="#" class="btn">WATCH VIDEO</a>
+		 	<a href="#" class="btn">BASIC SKILLS</a>
+		 	<a href="#" class="btn">LEARN MORE</a>
+		 </div>
 
-      body {
-        background: var(--primary-color);
-        color: var(--secondary-color);
-        overflow-x: hidden;
-      }
+		 	</header>
 
-      .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px 7%;
-        background: transparent;
-        display: flex;
-        align-items: center;
-        z-index: 100;
-      }
-
-      .logo {
-        font-size: 25px;
-        color: var(--main-color);
-        text-decoration: none;
-        font-weight: 600;
-        cursor: default;
-        margin-right: auto;
-        opacity: 0;
-        animation: slideRight 1s ease forwards;
-      }
-
-      .navbar a {
-        position: relative;
-        display: inline-block;
-        font-size: 18px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-        margin-right: 35px;
-        opacity: 0;
-        animation: slideLeft 1s ease forwards;
-        animation-delay: calc(0.2s * var(--i));
-      }
-
-      .navbar a.active::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -6px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-      }
-
-      .toggle {
-        display: flex;
-        margin-top: 1px;
-        cursor: pointer;
-        opacity: 0;
-        animation: slideLeft 1s ease forwards;
-        animation-delay: 3.5s;
-      }
-
-      .toggle .toggle-icon {
-        font-size: 24px;
-        color: #fff;
-      }
-
-      .home {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        padding: 60px 7% 0;
-      }
-
-      .home .home-content {
-        max-width: 440px;
-      }
-
-      .home-content h3 {
-        font-size: 32px;
-        line-height: 0.3;
-        opacity: 0;
-        animation: slideRight 1s ease forwards;
-        animation-delay: 0.7s;
-      }
-
-      .home-content h1 {
-        font-size: 56px;
-        font-weight: 700;
-        margin-bottom: 3px;
-        opacity: 0;
-        animation: slideRight 1s ease forwards;
-        animation-delay: 1s;
-      }
-
-      .home-content p {
-        font-size: 16px;
-        opacity: 0;
-        animation: slide
+</body>
+</html>
